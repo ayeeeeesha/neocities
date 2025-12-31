@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>drusilla♡roxy</title>
+
+<link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/pixel-operator" type="text/css"/>
+<link  href="https://rentry.co/synthstamps">
+<link href="https://y2k.neocities.org/blinkies">
+<link href="https://www.glitter-graphics.com/search?tags=gothic&page=2">
+<link href="https://autopsyblinkies.neocities.org/">
+<link href="https://artwork.neocities.org/fun">
+
+
+<!-- Favicon -->
+<link rel="icon" href="pics/heyyy.gif" type="image/gif">
+
+<style>
+* {
+ cursor: url('https://artwork.neocities.org/pixels/cursors/kuromi.png'), auto;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+ margin: 0;
+ background-image: url('pics/backgrnd.jpg');
+ font-family: Arial, sans-serif;
+ display: flex;
+ justify-content: center;
+}
+@media screen and (max-width: 480px) {
+  .container {
+    flex-direction: column; /* stack all columns vertically */
+    width: 100%;
+    gap: 10px;
+  }
+
+  .left-column, .middle-column, .right-column {
+    width: 100%; /* take full width */
+  }
+
+  .top-row img {
+    width: 100%; height: auto; /* responsive header */
+  }
+}
+.wrapper {
+  background: rgb(146, 90, 122); /* your box background */
+  width: 95%;             /* responsive width */
+  max-width: 900px;       /* desktop max width */
+  margin: 0 auto;         /* center wrapper */
+  padding: 20px;          /* some padding inside */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 10px;    /* optional rounded edges */
+}
+/* HEADER */
+.top-row {
+ display: flex;
+ justify-content: center;
+}
+
+.blinkies-row {
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+  margin-top: 2px; /* space under header */
+}
+
+.blinkies-row img {
+  height: 40px; /* adjust size of blinkies */
+  border: 0; /* optional */
+}
+/* MAIN CONTAINER */
+.container {
+ display: flex;
+ gap: 15px;
+ width: 900px;
+ align-items: flex-start;
+ margin-top: 2px; /* push content below ticker */
+}
+
+/* COLUMNS */
+.left-column,
+.middle-column,
+.right-column {
+ display: flex;
+ flex-direction: column;
+ gap: 15px;
+}
+
+.middle-column { width: 400px; }
+
+/* BOXES */
+.box1, .box2,.box4, .box5, .box6, .bottom-box {
+ background: rgb(128, 68, 106);
+ color: white;
+ padding: 10px;
+ font-family: 'PixelOperatorSCRegular', monospace;
+ /* border: 2px solid black; BLACK BORDER */
+ /* box-sizing: border-box; */
+}
+
+.box1, .box3 { width: 200px; }
+
+.box2 { height: 230px; overflow-y: auto; }
+.box4 { height: 236px; overflow-y: auto;}
+ .box6 { height: 220px; overflow: hidden; }
+ .box6 {
+  position: relative;  /* VERY IMPORTANT */
+  height: 200px;
+  overflow: hidden;
+}
+
+/* LINKS */
+.box1 a {
+ display: block;
+ color: white;
+ margin-bottom: 12px;
+}
+.box1 a:hover { color: rgb(0, 0, 0); }
+.box4 {
+  width: 100%;
+  max-width: 378px; /* optional, adjust to middle column width */
+  margin: 0 auto;   /* centers the box horizontally */
+  text-align: center; /* centers text and inline images */
+  padding: 10px;
+  overflow-y: auto;
+   text-align: left;
+}
+
+.box4 img {
+  display: inline-block; /* prevent images from breaking line */
+  margin: 5px auto;      /* space around images and center them */
+}
+.img-text {
+  display: flex;
+  align-items: flex-start; /* text aligns at top of image */
+  gap: 10px; /* space between image and text */
+  margin-bottom: 10px; /* space between multiple blocks */
+}
+
+.img-text img {
+  flex-shrink: 0; /* prevent image from shrinking */
+}
+.box4 p {
+  margin: 0;
+  line-height: 1.5;
+  text-align: left; /* normal paragraph alignment */
+}
+.box5{
+ overflow-y: auto;
+ height: 250px;
+  width: 200px;
+}
+.box5 a{
+  color: rgba(181, 129, 176, 0.839);
+  text-decoration: none;
+ }
+.box5 a:hover { color: #ca86c1e4; }
+.chatbox {
+  width: 200px;
+  height: 246px;
+  border: 1px solid #bd7498;
+  /* background: #0e0e0e; */
+  padding: 10px;
+  font-family: monospace;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 8px;
+}
+
+.chat-msg {
+  margin-bottom: 6px;
+  padding: 6px;
+  /* background: #161616; */
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+.chat-msg strong {
+  color: #ff9ad5;
+}
+
+.chat-input {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.chat-input input {
+  flex: 1;
+  background: #111;
+  border: 1px solid #ff4da6;
+  color: #fff;
+  font-size: 11px;
+  padding: 4px;
+}
+
+.chat-input button {
+  background: #ff4da6;
+  border: none;
+  color: black;
+  font-size: 11px;
+  cursor: pointer;
+}
+.chatbox {
+  height: 100%;
+}
+.overlay-img {
+  position: absolute;
+  top: 12px;      /* move up/down */
+  right: 26px;    /* move left/right */
+  width: 50px;
+  z-index: 10;     /* stays ABOVE the box */
+  pointer-events: none; /* so it doesn't block clicks */
+}
+.box2 {
+  font-family: 'PixelOperatorSCRegular', monospace; /* KEEP your font */
+  color: #ffffff;
+  font-size: 13px;
+  text-align: center;
+  padding: 15px;
+  position: relative;
+}
+
+.box2 h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #ff9ad5;
+}
+
+/* Basic info row */
+.info-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.info-item {
+  font-size: 16px;
+}
+
+.info-heading {
+  font-weight: bold;
+  color:#ff9ad5;
+}
+
+/* Sections (Dreams, Likes, Dislikes, Hobbies) */
+.section {
+  margin-bottom: 12px;
+}
+
+.section-heading {
+  font-weight: bold;
+  font-size: 18px;
+  color:#ff9ad5;
+  margin-bottom: 4px;
+}
+
+.section-text {
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 1.4;
+}
+.floating-emoji {
+  position: absolute;
+  z-index: 100; /* stays above everything */
+  pointer-events: none; /* so it doesn't block clicks */
+  transition: transform 0.3s ease;
+}
+
+.floating-emoji:hover {
+  transform: scale(1.2) rotate(10deg); /* fun hover effect */
+}
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.floating-emoji {
+  animation: float 3s ease-in-out infinite;
+}
+
+.box2-overlay {
+  position: absolute; /* lets you place anywhere inside box2 */
+  pointer-events: none; /* so it won't block clicking text */
+  z-index: 10; /* above the box content */
+  transition: transform 0.3s ease; /* optional animation */
+}
+
+.box2-overlay:hover {
+  transform: scale(1.2) rotate(10deg);
+}
+
+
+</style>
+</head>
+
+<body>
+<img src="https://www.glitter-graphics.com/images/t/b/100x100/3519/3519842ebepmt5oyc.webp" class="floating-emoji" style="top:700px; left:50px; width:60px;">
+<img src="https://popteamepic.carrd.co/assets/images/gallery54/53618dd6.gif?v10408301085951" class="floating-emoji" style="top:690px; left:48px; width:80px;">
+
+<div class="wrapper">
+
+ <!-- HEADER IMAGE -->
+ <div class="top-row">
+  <img src="pics/headerr.jpg" width="900" height="180">
+ </div>
+
+ <div class="blinkies-row">
+  <img src="https://artwork.neocities.org/photos/blinkies/im-walkin-here.gif" width="220">
+  <img src="https://y2k.neocities.org/blinkiez/1518636ola29hlo3c.gif" width="230">
+  <img src="https://artwork.neocities.org/photos/blinkies/kuromi.gif" width="230">
+  <img src="https://artwork.neocities.org/photos/blinkies/pC4jhk4W_o.gif" width="220">
+</div>
+ <!-- MAIN BOXES -->
+ <div class="container">
+
+  <!-- LEFT COLUMN -->
+  <div class="left-column">
+   <div class="box1">
+    <a href="#"><img src="https://artwork.neocities.org/pixels/tiny/sanrio/173e8884.gif"> everyday log</a>
+    <a href="#"><img src="https://artwork.neocities.org/pixels/tiny/sanrio/72dac7ac.gif"> roxy's playlist</a>
+    <a href="#"><img src="https://artwork.neocities.org/pixels/tiny/sanrio/173e8884.gif"> my favourites</a>
+    <a href="#"><img src="https://artwork.neocities.org/pixels/tiny/sanrio/72dac7ac.gif"> bored</a>
+   </div>
+
+   <div class="stamps-between-1-5">
+        <img src="https://www.glitter-graphics.com/images/t/b/100x100/1442/1442281ash31jkgu7.webp" width="220" height="120px">
+        <!-- <img src="https://adriansblinkiecollection.neocities.org/b/stamps/ayabrea.png" width="00px"> -->
+    </div>
+
+   <div class="box5">Fun links you can try <hr>
+    <a href="https://picrew.me/en/image_maker/2567006"target="_blank">cool room maker</a><br>
+    <a href="https://picrew.me/en/image_maker/644129"target="_blank">character maker</a><br>
+    <a href="https://stars.chromeexperiments.com/"target="_blank">100000 stars</a><br>
+    <a href="https://www.crazygames.com/game/space-waves"target="_blank">space waves gameplay</a><br>
+    <a href="https://www.dolldivine.com/kawaii-cuties"target="_blank">hello kitty character maker</a><br>
+    <a href="https://comfortkuma.itch.io/heartstop-tour"target="_blank">heartstop tour</a><br>
+    <a href="https://picrew.me/en/image_maker/2439614"target="_blank">bedroom customaization</a><br>
+    <a href="https://rentry.co/blinkies"target="_blank">Blinkies</a><br>
+    <a href="https://www.glitter-graphics.com/search?tags=gothic+pink&categoryID=120"target="_blank">graphics</a><br>
+    <a href="https://y2k.neocities.org/stamps"target="_blank">stamps</a><br>
+    <a href="https://artwork.neocities.org/graphics"target="_blank">graphics</a><br>
+    <a href="https://rentry.co/koska7"target="_blank">stamps collection</a><br>
+    <a href="https://rentry.co/decorpixel"target="_blank">pixel emojis</a><br>
+    <a href="https://gifcity.carrd.co/#graphics"target="_blank">graphics</a><br>
+    <a href="https://adriansblinkiecollection.neocities.org/"target="_blank">all graphics</a><br>
+    <a href="https://omgkawaiiangelchan.neocities.org/"target="_blank">kawaii gaphics</a><br>
+    <a href="https://fauxfur.neocities.org/"target="_blank">kawaii emojis</a>
+  </div>
+  </div>
+
+  <!-- MIDDLE COLUMN -->
+  <div class="middle-column">
+   <div class="box2">
+    <h1 style="text-align: center;" >Welcome to my site</h1>
+    <p style="font-size: 16px;">-All About Me-</p><hr><br><div class="info-row">
+      
+   <img src="https://artwork.neocities.org/toybox/mine/yum-mamegoma.gif"
+     class="box2-overlay"
+     style="top: 20px; left: 24px; width: 30px;">
+
+     <img src="https://64.media.tumblr.com/d65212d0050b2057686a31a3033377a4/9a5e59d4a20102aa-17/s75x75_c1/f537b0a0585d89556f1dfac7a609449e0dcd6813.gifv"
+     class="box2-overlay"
+     style="top: 350px; left: 290px; width: 30px;">
+
+<img src="https://artwork.neocities.org/dollz/minis/sil84.gif"
+     class="box2-overlay"
+     style="top: 7px; left: 290px; width: 90px;">
+
+     <img src="https://artwork.neocities.org/toybox/kitty/artwork-vampire.gif"
+     class="box2-overlay"
+     style="top: 350px; left: 28px; width: 50px;">
+
+<img src="https://artwork.neocities.org/dollz/minis/mi17.gif"
+     class="box2-overlay"
+     style="top: 650px; left: 300px; width: 60px;">
+
+     <img src="https://64.media.tumblr.com/d65212d0050b2057686a31a3033377a4/9a5e59d4a20102aa-17/s75x75_c1/f537b0a0585d89556f1dfac7a609449e0dcd6813.gifv"
+     class="box2-overlay"
+     style="top: 650px; left: 290px; width: 30px;">    
+     
+
+    <div class="info-item"><span class="info-heading">My Username:</span> drusillaroxie</div>
+    <div class="info-item"><span class="info-heading">Age:</span> 18</div>
+    <div class="info-item"><span class="info-heading">Star Sign:</span> Cancer</div>
+    <div class="info-item"><span class="info-heading">Currently Doing:</span> Bachelors in CS</div>
+    <div class="info-item"><span class="info-heading">Status:</span> Learning to code</div>
+  </div>
+
+  <!-- Dreams -->
+  <div class="section">
+    <div class="section-heading">Dreams</div>
+    <div class="section-text">
+      Be an astronaut → go to space<br>
+      Visit Paris<br>
+      Be a cyberagent<br>
+      Publish movies<br>
+      Make a game
+    </div>
+  </div>
+
+  <!-- Likes -->
+  <div class="section">
+    <div class="section-heading">Likes</div>
+    <div class="section-text">
+      Ice cream, pizza, noodles, Cheetos, flowers, aquarium, blue, pink, lilies, Paris, Tokyo, Berlin, snow, Rapunzel, lanterns, Barbies, movies, love, and many more
+    </div>
+  </div>
+
+  <!-- Dislikes -->
+  <div class="section">
+    <div class="section-heading">Dislikes</div>
+    <div class="section-text">
+      I am lazy, everything besides sitting in a blanket over my bed and doing my work
+    </div>
+  </div>
+
+  <!-- Hobbies -->
+  <div class="section">
+    <div class="section-heading">Hobbies</div>
+    <div class="section-text">
+      Coding, reading books,<br> drawing, watching movies
+    </div>
+  </div>
+    </div>
+ <img src="https://yokai.crd.co/assets/images/image05.png?v=b4df531c" alt="">
+   <div class="box4">
+
+  <div class="img-text">
+    <img src="https://artwork.neocities.org/dollz/silents/978FZVP.gif" width="60">
+    
+    <p> <br> ♡ hey! welcome to my mini website. this site is best viewed on desktop. </p>
+  </div>
+  <p> and i made the username drusillaroxy just for this website page because when i was making this website it just made like this vibe and i then named it this so don't think that this website page is not mine, it's mine <br><br>um i made this website for myself bcz i was bored scrolling through social media so in this site u will ony see the home page and nothing else<br> <br></p>
+
+   <div class="img-text">
+    <img src="https://artwork.neocities.org/dollz/silents/rain_fa19.gif" width="90">
+    
+    <p>when i enter into my uni did i thought then that i will write my daily log somewhere or i will a website for everyone where they can share their too</p>
+  </div>
+  <p> so i will someday make a site for others too so wish me luck (; and whatever u do just don't stop believing that u can't do that <br><br> u can who made ai us human right so u can do anything just go wild chase it be crazy over that thing that's how i made this site hehe</p>
+
+</div>
+
+
+  </div>
+
+  <!-- RIGHT COLUMN -->
+  <div class="right-column">
+   <div class="box3">
+    <img src="https://www.glitter-graphics.com/images/t/b/270x60/1996/1996097couor0lcn0.webp" alt="" height="120" width="270">
+    </div>
+
+    <div class="stamps-between-3-6">
+      <img src="https://artwork.neocities.org/dollz/group/animdoll9.gif" alt="">
+       </div>
+
+   <div class="box6"><img src="https://64.media.tumblr.com/d65212d0050b2057686a31a3033377a4/9a5e59d4a20102aa-17/s75x75_c1/f537b0a0585d89556f1dfac7a609449e0dcd6813.gifv"
+     class="overlay-img"><div class="chatbox">
+  <div class="chat-messages" id="chatMessages"></div>
+
+  <div class="chat-input">
+    <input type="text" id="chatName" placeholder="your name ♡">
+    <input type="text" id="chatText" placeholder="type a message...">
+    <button id="sendChat">send</button>
+  </div>
+</div>
+</div>
+  </div>
+
+ </div>
+ <img src="https://artwork.neocities.org/dividers/5.gif" width="900"height="50">
+</div>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const chatBox = document.getElementById("chatMessages");
+  const nameInput = document.getElementById("chatName");
+  const textInput = document.getElementById("chatText");
+  const sendBtn = document.getElementById("sendChat");
+
+  // 🌸 Example starter messages (only first time)
+  if (!localStorage.getItem("chat")) {
+    const starterChat = [
+      { name: "roxy ♡", text: "welcome to my little chat corner ✨" },
+      { name: "guest ★", text: "this site is sooo cute omg" },
+      { name: "pixelCat", text: "neocities vibes forever 🖤" },
+      { name: "you", text: "feel free to type anything here ~" }
+    ];
+    localStorage.setItem("chat", JSON.stringify(starterChat));
+  }
+
+  function loadChat() {
+    chatBox.innerHTML = "";
+    const chats = JSON.parse(localStorage.getItem("chat")) || [];
+
+    chats.forEach(c => {
+      const div = document.createElement("div");
+      div.className = "chat-msg";
+      div.innerHTML = `<strong>${c.name}:</strong> ${c.text}`;
+      chatBox.appendChild(div);
+    });
+
+    chatBox.scrollTop = chatBox.scrollHeight;
+  }
+
+  sendBtn.onclick = () => {
+    const name = nameInput.value.trim();
+    const text = textInput.value.trim();
+
+    if (!name || !text) return;
+
+    const chats = JSON.parse(localStorage.getItem("chat")) || [];
+    chats.push({ name, text });
+    localStorage.setItem("chat", JSON.stringify(chats));
+
+    textInput.value = "";
+    loadChat();
+  };
+
+  loadChat();
+});
+</script>
+
+
+</body>
+</html>

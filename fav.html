@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>my favourites</title>
+<link rel="icon" href="pics/571eb52f.gif" type="image/gif">
+<style>
+body {
+    background: url('pics/cibde.jpg') no-repeat fixed;
+    background-size: cover;
+    font-family: Verdana, sans-serif;
+    margin: 20px 0 0 0;
+    color: #000;
+}
+        * {
+ cursor: url('https://artwork.neocities.org/pixels/cursors/cake.gif'), auto;
+}
+.container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Left sidebar wider */
+.sidebar {
+    width: 400px; 
+}
+
+/* Right main narrower */
+.main {
+    width: 500px;
+}
+
+/* All boxes base style */
+.box, .box2 {
+    padding: 10px;
+    margin-bottom: 15px;
+    word-wrap: break-word;
+    box-sizing: border-box;
+}
+
+/* Sidebar boxes bigger */
+.sidebar .box, .sidebar .box2 {
+    width: 100%;
+    min-height: 150px;
+}
+
+/* Main boxes narrower and shorter by default */
+.main .box, .main .box2 {
+    width: 100%;
+    min-height: 120px;
+}
+
+/* Increase height for special boxes */
+.main .box.large {
+    min-height: 200px;
+}
+
+.box {
+   border: 4px dotted rgb(115, 186, 214);
+   background-color: #4090a8; 
+   opacity: 0.89;
+}
+
+.box2 {
+   border: 4px double #CAE3EA;
+   background-color: #F7F9FA;
+   opacity: 0.75;
+}
+
+h1.glow {
+    color: white;
+    text-align: center;
+    text-shadow: 0 0 5px #8ccfff, 0 0 10px #6bbcff;
+}
+
+.flexbox {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.left-img {
+    width: 150px;
+    flex-shrink: 0;
+}
+
+.highlight {
+  background-color: #b6dfeb; 
+  color: black;
+}
+.highlight2 {
+  background-color: rgb(133, 187, 201); 
+  color: black;
+}
+
+/* Images fixed size */
+img.fixed {
+    width: 300px;
+    height: auto;
+}
+</style>
+</head>
+<body>
+
+<a href="index.html" style="font-size: 19px; color: #93b9d8; margin-left: 26px;">home</a>
+
+<h1 class="glow"><em>my favorite media and links</em></h1>
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="box flexbox">
+            <div>
+                <span class="highlight2">My Favorite Animes:</span>
+                <ul>
+                    <li>snow white with red hair</li>
+                    <li>kimi ni todoke</li>
+                    <img src="pics/jpo.gif" class="fixed">
+                    <li>My Love Story with Yamada-Kun at lv999</li>
+                    <li>beyond the boundary</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="box2">
+           <span class="highlight">my favorite movies:</span>
+            <ul>
+                <li>five feet apart</li>
+                <li>rapunzel</li>
+                <li>spiderman</li>
+                <img src="pics/gwen.gif" class="fixed">
+                <li>night in paradise</li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <img src="pics/sailor moon.gif" class="fixed">
+        </div>
+    </div>
+
+    <!-- Main -->
+    <div class="main">
+        <div class="box">
+            <span class="highlight2">Favorite Characters:</span>
+            <ul>
+                <li>spiderman</li>
+                <li>hiro & baymax</li>
+                <img src="pics/Baymax and Hiro.jpg" width="200">
+                <li>powder (arcane)</li>
+                <li>mizu (blue eye samurai)</li>
+            </ul>
+        </div>
+
+        <div class="box large">
+            <img src="pics/So pretty.gif" class="fixed">
+        </div>
+
+        <div class="box">
+            <span class="highlight2">My Favorite Books:</span>
+            <ul>
+                <li>the predator (dark verse all series)</li>
+                <li>mafia and his angel</li>
+                <li>cross my heart</li>
+                <li>when haru was here</li>
+                <li>loneliest girl in the universe</li>
+                <li>king of wrath</li>
+            </ul>
+        </div>
+
+        <div class="box2">
+           <span class="highlight">My Favourite Youtubers:</span> 
+            <ul>
+                <li>bixu</li>
+                <li>daiz</li>
+                <li>leyla tavas</li>
+                <li>saranghoe</li>
+            </ul>
+        </div>
+
+        <div class="box large">
+            <span class="highlight2">Favourite Food:</span><br><br>
+            <img src="pics/ice23.jpg" class="fixed">
+            <img src="pics/node.jpg" class="fixed"><br><br>
+            <img src="pics/vspiz.jpg" class="fixed">
+            <img src="pics/vanes.jpg" class="fixed" height="200">
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
